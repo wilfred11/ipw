@@ -6,6 +6,8 @@ Suppose for example a simple case where a company builds factories in villages. 
 
 ![naive](https://github.com/user-attachments/assets/779a2a92-69d3-412c-9985-0b2406054fab)
 
-A better way to compare differences in income for villages with and without factories would be to compare villages that would be good candidates for building a factory. For this reason the 
+A better way to compare differences in income for villages with and without factories would be to only compare villages that would be good candidates for building a factory. For this reason the features used to select villages apt for building a factory should be used to find which villages with factories match villages without factories.
+
+
 
 
