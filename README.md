@@ -16,7 +16,7 @@ A better way to compare differences in income for villages with and without fact
 
 #### The propensity score
 
-Using logistic regression one could find one score per individual village. This score, that captures all features on which a village is selected, makes it possible to match records automatically, and is more accurate than handpicking records. The image shows all selected records have matches with record 11 and record 12. So the treatment effect is obtained using only two records for villages where no factory has been build.
+Using logistic regression one could find one score per individual village. This score, that captures all features on which a village is selected, makes it possible to match records automatically, and is more accurate than handpicking records. The image shows all selected records have matches with record 11 and record 12, so record 11 and 12 form the control group. So the treatment effect is obtained using only two records for villages where no factory has been build.
 
 ![prop](https://github.com/user-attachments/assets/d987d67b-7e47-4c18-b20c-13991a06f86e)
 
