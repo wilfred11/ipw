@@ -15,7 +15,10 @@ A better way to compare differences in income for villages with and without fact
 
 #### The propensity score
 
-Using logistic regression one could find one score per individual village. This score that sort of like captures all features on which a village is selected, this score makes it possible to match records automatically, and is more accurate than handpicking records.
+Using logistic regression one could find one score per individual village. This score, that captures all features on which a village is selected, makes it possible to match records automatically, and is more accurate than handpicking records.
+
+![prop](https://github.com/user-attachments/assets/d987d67b-7e47-4c18-b20c-13991a06f86e)
+
 
 
 
