@@ -8,14 +8,16 @@ Suppose for example a simple case where a company builds factories in villages. 
 
 #### Still a simple case
 
-A better way to compare differences in income for villages with and without factories would be to only compare villages that would be good candidates for building a factory. For this reason the features used to select villages apt for building a factory should be used to find which villages with factories match villages without factories. In this case the unemployment rate and the number of technicians per capita are used to assert whether villages are apt to build a factory near. In this case the matches are made by hand. And the records that have no match are excluded from effect calculations.
+A better way to compare differences in income for villages with and without factories would be to only compare villages that would be good candidates for building a factory. For this reason the features used to select villages apt for building a factory should be used to find which villages with factories match villages without factories. In this case the unemployment rate and the number of technicians per capita are used to assert whether villages are apt to build a factory near. In this case the matches are made by hand. And the records that have no match are excluded from effect calculations. Average Treatment Effect calculated according to this method is probably a better measure.
 
 ![less-naive](https://github.com/user-attachments/assets/191190a7-d5a9-4010-9d9b-dc6f910e5ce6)
 
 
 #### The propensity score
 
-Using logistic regression one could find one score per individual that sort of like captures all features on which a village is selected, this score makes it possible to match records automatically. 
+Using logistic regression one could find one score per individual village. This score that sort of like captures all features on which a village is selected, this score makes it possible to match records automatically, and is more accurate than handpicking records.
+
+
 
 
 
