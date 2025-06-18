@@ -1,6 +1,7 @@
 ### Propensity Score Matching
 
-The "propensity score" describes how likely a unit is to have been treated, given its covariate values. 
+The "propensity score" describes how likely a unit is to have been treated, given its covariate values. Data that is not obtained using a randomized controlled trial (RCT) is usually much harder to compare, or it is harder to draw almost causal conclusions from. Using a technique like "propensity score matching", it gets easier to obtain clearer results without going through all the formalities of a RCT.
+
 #### Simple case
 Suppose for example a simple case where a company builds factories in villages. To naively compare the effects of the factory on village income a simple weighted mean difference between income with and without factory has to be made. This could lead to the conclusion that the mean income of a village lowers after building a factory nearby.
 
@@ -15,7 +16,7 @@ A better way to compare differences in income for villages with and without fact
 
 #### The propensity score
 
-Using logistic regression one could find one score per individual village. This score, that captures all features on which a village is selected, makes it possible to match records automatically, and is more accurate than handpicking records.
+Using logistic regression one could find one score per individual village. This score, that captures all features on which a village is selected, makes it possible to match records automatically, and is more accurate than handpicking records. The image shows all selected records have matches with record 11 and record 12. So the treatment effect is obtained using only two records for villages where no factory has been build.
 
 ![prop](https://github.com/user-attachments/assets/d987d67b-7e47-4c18-b20c-13991a06f86e)
 
