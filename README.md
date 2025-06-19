@@ -37,9 +37,7 @@ To get the scores themselves is done using the following line of code.
 
 [To understand why to use IPW](https://towardsdatascience.com/understanding-inverse-probability-of-treatment-weighting-iptw-in-causal-inference-4e69692bce7e/)
 
-The link above uses a minimal example to explain how, by weighting individual records, biases are removed in such a way that the influence of having knowledge on someone's sex provides knowledge in whether or not someone received a treatment. The technique creates a pseudopopulation in the example at hand, it doubles the number of results in the dataset. In this way this technique somehow falsifies results obtained from studies, it also shows how to adress these problems.
-
-The link above explains how IPW balances the data in such a way, the sex of an individual has no influence on its chance to receive the treatment. This gives way to the illustration in which the vertex between sex and treatment is removed.
+The link above uses a minimal example to explain how, by weighting individual records, IPW balances a dataset. In the example at hand it doubles the number of results in the dataset. In this way this technique somehow falsifies results obtained from studies, it also shows how to adress this problem. After applying the technique, the sex of an individual has no influence on its chance to receive the treatment. This gives way to the illustration in which the vertex between sex and treatment is removed.
 
 <img src="https://github.com/user-attachments/assets/c6e72a9d-53d6-46e3-b56e-613b42e2df38" alt="drawing" width="200"/>
 <img src="https://github.com/user-attachments/assets/57ae1a48-ebf5-4cc2-9cbe-d2a66c46d1ad" alt="drawing" width="200"/>
