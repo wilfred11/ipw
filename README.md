@@ -43,7 +43,7 @@ The link above explains how IPW balances the data in such a way that knowing the
 
 Sex affects the outcome but it no longer affects the treatment.
 
-<img src="![confound](https://github.com/user-attachments/assets/c6e72a9d-53d6-46e3-b56e-613b42e2df38)" alt="drawing" width="200"/>
+<img src=![confound](https://github.com/user-attachments/assets/c6e72a9d-53d6-46e3-b56e-613b42e2df38) alt="drawing" width="200"/>
 
 ![confound](https://github.com/user-attachments/assets/c6e72a9d-53d6-46e3-b56e-613b42e2df38)
 
