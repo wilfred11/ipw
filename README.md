@@ -35,7 +35,9 @@ To get the scores themselves is done using the following line of code.
 
 ### Inverse propensity weighting
 
-[Link](https://towardsdatascience.com/understanding-inverse-probability-of-treatment-weighting-iptw-in-causal-inference-4e69692bce7e/))!
+[To understand why to use IPW](https://towardsdatascience.com/understanding-inverse-probability-of-treatment-weighting-iptw-in-causal-inference-4e69692bce7e/)
+
+
 
 
 
