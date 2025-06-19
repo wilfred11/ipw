@@ -33,6 +33,10 @@ To get the scores themselves is done using the following line of code.
 
 `model.predict_proba(d_full[['unemp_rate', 'technician_pc']])[:,1]`
 
+### Inverse propensity weighting
+
+[Link](https://towardsdatascience.com/understanding-inverse-probability-of-treatment-weighting-iptw-in-causal-inference-4e69692bce7e/))!
+
 
 
 
