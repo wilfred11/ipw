@@ -23,6 +23,8 @@ Using logistic regression one could find one score per individual village. This 
 
 ![prop](https://github.com/user-attachments/assets/41c71a19-e48c-4774-b729-afcf693fdd94)
 
+`model = LogisticRegression().fit(data[['unemp_rate', 'technician_pc']],data['factory'] )`
+
 
 
 
