@@ -100,7 +100,10 @@ This graph shows the distribution of propensity scores over the treated and untr
 
 ##### ROC
 
-![roc](https://github.com/user-attachments/assets/64c9bed9-bd03-40a1-b399-ebb176c3f830)
+Briefly - too good of an AUC (and sharp vertical/horizontal lines) might suggest the groups are too separated and therefore violate the positivity violation. Too poor of an AUC might be a good sign that the groups are well-mixed and overlap.
+
+![roc](https://github.com/user-attachments/assets/3158b23d-0ddc-4b6f-9e41-9dbf1c226de7)
+
 
 
 
