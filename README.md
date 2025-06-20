@@ -86,7 +86,7 @@ The effect is 5.54, so taking the test preparation course increases the math sco
 
 ##### Assessment
 
-The weighting has had its effects on the covariates for both the control group and the treated group, after weighting there is hardly any difference between them. As I am using crossvalidation, the validation fold gives a much more ambiguous look.
+The weighting has had its effects on the covariates for both the control group and the treated group (left), after weighting there is hardly any difference between them. As I am using crossvalidation, the validation fold gives a much more ambiguous look (right).
 
 ![love](https://github.com/user-attachments/assets/786f5e23-2310-44af-8378-469f85dec081)
 
