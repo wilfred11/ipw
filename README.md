@@ -42,6 +42,30 @@ The link above uses a minimal example to explain how, by weighting individual re
 <img src="https://github.com/user-attachments/assets/c6e72a9d-53d6-46e3-b56e-613b42e2df38" alt="drawing" width="200"/>
 <img src="https://github.com/user-attachments/assets/57ae1a48-ebf5-4cc2-9cbe-d2a66c46d1ad" alt="drawing" width="200"/>
 
+#### Case study
+
+To test the ideas of IPW ourself, I have used IPW on [a kaggle dataset](https://www.kaggle.com/datasets/rkiattisak/student-performance-in-mathematics). 
+
+For every student the dataset contains social, gender, racial indicators, some test results and whether or not a test preparation course was followed.
+
+At first data needs to be inspected and prepared, for categorical data dummy binary columns need to be created (IPW is all about numbers).
+
+The social, gender, racial indicators will be used to get an idea of how likely someone is to take the test preparation course. The dependent variable is the result on a math test.
+
+To find out how interesting it would be to take a test preparation course, the Python causallib library was used to calculate a treatment effect.
+
+The propensity scores are calculated using sklearn's LogisticRegression learner. CausalLib IPW model is then used to assign a weight to every record. A higher weight on a student that is in the treated group would indicate only a few students in the treated group are having similar confounders (the social, gender and racial indicators). 
+
+##### Propensity score histogram
+
+Before getting actual results it is interesting to get an idea of treated and untreated students and their propensity scores.
+
+![prop-hist](https://github.com/user-attachments/assets/0b467309-5ce4-4101-9ca1-d801f71184cf)
+
+From the image above it is to be seen there is a lot of overlap between the group that took the test preparation course and the group that did not. So every type of student that did take the course, has a counterpart that didn't take it.  
+
+
+
 
 
 
