@@ -64,6 +64,25 @@ Before getting actual results it is interesting to get an idea of treated and un
 
 From the image above it is to be seen there is a lot of overlap between the group that took the test preparation course and the group that did not. So every type of student that did take the course, has a counterpart that didn't take it. The image also makes clear that the majority of students didn't take the course.
 
+#### Results
+The ATE is obtained as follows. The x-cols variable contains all the confounders.
+
+`from causallib.estimation import IPW`
+
+`from sklearn.linear_model import LogisticRegression`
+
+`learner = LogisticRegression()`
+
+`ipw = IPW(learner)`
+
+`x-cols= ['standard', 'group B', 'group C', 'group D', 'group E', "associate's degree", "bachelor's degree", "high school", "master's degree", "some high school", 'female']`
+
+`outcomes = ipw.estimate_population_outcome(data[x_cols], data['test preparation course'], data['math score'])`
+
+`effect = ipw.estimate_effect(outcomes[1], outcomes[0])`
+
+
+
 
 
 
