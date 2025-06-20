@@ -100,7 +100,7 @@ This graph shows the distribution of propensity scores over the treated and untr
 
 ##### Receiver-operating characteristic curve
 
-The ROC plots the true positive rate (sensitivity) against the false positive rate (1 - specificity) at various threshold settings. The weighted training ROC shows almost no discriminational power between exposed and control group (which is good). On the contrary, the validation graph shows worse results, the weighted graph should be as close as possible to the chance line.
+The ROC plots the true positive rate (sensitivity) against the false positive rate (1 - specificity) at various threshold settings. The weighted training ROC shows almost no discriminational power between exposed and control group (which is good). On the contrary, the validation graph shows worse results, the weighted graph should be as close as possible to the chance line and it is not.
 
 ![roc](https://github.com/user-attachments/assets/3158b23d-0ddc-4b6f-9e41-9dbf1c226de7)
 
