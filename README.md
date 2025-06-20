@@ -91,7 +91,7 @@ The weighting has had its effects on the covariates for both the control group a
 ![love](https://github.com/user-attachments/assets/786f5e23-2310-44af-8378-469f85dec081)
 
 
-This graph shows the distribution of propensity scores over the treated and untreated group after weighting. The distribution shows a balanced distribution, which is good. If a given propensity value only has a density only in the treated distribution and not the control (or vice-versa), it is a warning sign that the groups might not be fully comparable to support a causal claim.  Though it might also suggest the model overfitted. Therefore, it is worth to also examine the plot on a validation set if possible.
+This graph shows the distribution of propensity scores over the treated and untreated group after weighting. The distribution shows a balanced distribution, which is good. If a given propensity value only has a density only in the treated distribution and not the control (or vice-versa), it is a warning sign that the groups might not be fully comparable to support a causal claim.  Though it might also suggest the model is overfitted. Therefore, it is worth to also examine the plot on a validation set if possible.
 
 ![weight_distri](https://github.com/user-attachments/assets/da9efc78-4061-4c11-994d-668527c69097)
 
