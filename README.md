@@ -62,7 +62,7 @@ Before getting actual results it is interesting to get an idea of treated and un
 
 ![prop-hist](https://github.com/user-attachments/assets/0b467309-5ce4-4101-9ca1-d801f71184cf)
 
-From the image above it is to be seen there is a lot of overlap between the group that took the test preparation course and the group that did not. So every type of student that did take the course, has a counterpart that didn't take it.  
+From the image above it is to be seen there is a lot of overlap between the group that took the test preparation course and the group that did not. So every type of student that did take the course, has a counterpart that didn't take it. The image also makes clear that the majority of students didn't take the course.
 
 
 
