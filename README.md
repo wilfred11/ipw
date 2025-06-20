@@ -64,7 +64,7 @@ Before getting actual results it is interesting to get an idea of treated and un
 
 From the image above it is to be seen there is a lot of overlap between the group that took the test preparation course and the group that did not. So every type of student that did take the course, has a counterpart that didn't take it. The image also makes clear that the majority of students didn't take the course.
 
-#### Results
+##### Results
 The ATE is obtained as follows. The x-cols variable contains all the confounders.
 
 `from causallib.estimation import IPW`
@@ -82,6 +82,18 @@ The ATE is obtained as follows. The x-cols variable contains all the confounders
 `effect = ipw.estimate_effect(outcomes[1], outcomes[0])`
 
 The effect is 5.54, so taking the test preparation course increases the math score by 5.54 points. The maximum score to be obtained for the math test is 100.
+
+##### Assessment
+
+The weighting has had its effects on the covariates, there is hardly any difference between them.
+
+![love](https://github.com/user-attachments/assets/308ad93a-5d3b-4466-903c-2f148d2020b9)
+
+
+
+![propensity_distr](https://github.com/user-attachments/assets/571f5331-8ed6-449d-8260-b07fdf2ac8ca)
+
+
 
 
 
