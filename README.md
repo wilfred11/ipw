@@ -86,12 +86,15 @@ The effect is 5.54, so taking the test preparation course increases the math sco
 
 ##### Assessment
 
-The weighting has had its effects on the covariates for both the control group and the treated group (left), after weighting there is hardly any difference between them. As I am using crossvalidation, the validation fold gives a much more ambiguous look (right).
+The weighting has had its effects on the covariates for both the control group and the treated group (left), after weighting there is hardly any difference between them. As I am using crossvalidation, the validation fold gives a much more ambiguous look (right). The dataset only contains data for 1000 students, this could cause these results.
 
 ![love](https://github.com/user-attachments/assets/786f5e23-2310-44af-8378-469f85dec081)
 
 
 This graph shows the distribution of propensity scores over the treated and untreated group after weighting. The distribution shows a balanced distribution, which is good.
+
+![weight_distri](https://github.com/user-attachments/assets/da9efc78-4061-4c11-994d-668527c69097)
+
 
 
 
