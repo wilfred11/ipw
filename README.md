@@ -44,7 +44,7 @@ The link above uses a minimal example to explain how, by weighting individual re
 
 ### Case study
 
-To test the ideas of IPW ourself, I have used IPW on [a kaggle dataset](https://www.kaggle.com/datasets/rkiattisak/student-performance-in-mathematics). 
+To test the ideas of IPW ourself, I have applied IPW on [a kaggle dataset](https://www.kaggle.com/datasets/rkiattisak/student-performance-in-mathematics). 
 
 For every student the dataset contains social, gender, racial indicators, some test results and whether or not a test preparation course was followed.
 
@@ -66,7 +66,7 @@ Before getting actual results it is interesting to get an idea of the distributi
 From the image above it is to be seen there is a lot of overlap between the group that took the test preparation course and the group that did not. So every type of student that did take the course, has a counterpart that didn't take it. The image also makes clear that the majority of students didn't take the course.
 
 #### Results
-The ATE is obtained as follows. The x-cols variable contains all the confounders.
+The ATE is obtained as can be seen in the code snippet below. The x-cols variable contains all the confounders.
 
 `from causallib.estimation import IPW`
 
