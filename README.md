@@ -60,7 +60,8 @@ The propensity scores are calculated using sklearn's LogisticRegression learner.
 
 Before getting actual results it is interesting to get an idea of treated and untreated students and their propensity scores.
 
-![prop-hist](https://github.com/user-attachments/assets/0b467309-5ce4-4101-9ca1-d801f71184cf)
+![prop_histo](https://github.com/user-attachments/assets/20389ac9-28a3-4c84-bb21-56713a0e7dbd)
+
 
 From the image above it is to be seen there is a lot of overlap between the group that took the test preparation course and the group that did not. So every type of student that did take the course, has a counterpart that didn't take it. The image also makes clear that the majority of students didn't take the course.
 
@@ -85,13 +86,14 @@ The effect is 5.54, so taking the test preparation course increases the math sco
 
 ##### Assessment
 
-The weighting has had its effects on the covariates, after weighting there is hardly any difference between them.
+The weighting has had its effects on the covariates for both the control group and the treated group, after weighting there is hardly any difference between them. As I am using crossvalidation, the validation fold gives a much more ambiguous look.
 
-![love](https://github.com/user-attachments/assets/308ad93a-5d3b-4466-903c-2f148d2020b9)
+![love](https://github.com/user-attachments/assets/786f5e23-2310-44af-8378-469f85dec081)
+
 
 This graph shows the distribution of propensity scores over the treated and untreated group after weighting. The distribution shows a balanced distribution, which is good.
 
-![propensity_distr](https://github.com/user-attachments/assets/571f5331-8ed6-449d-8260-b07fdf2ac8ca)
+
 
 
 
