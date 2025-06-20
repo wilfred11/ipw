@@ -58,7 +58,7 @@ The propensity scores are calculated using sklearn's LogisticRegression learner.
 
 ##### Propensity score histogram
 
-Before getting actual results it is interesting to get an idea of treated and untreated students and their propensity scores.
+Before getting actual results it is interesting to get an idea of the distribution of the students' propensity scores.
 
 ![prop_histo](https://github.com/user-attachments/assets/20389ac9-28a3-4c84-bb21-56713a0e7dbd)
 
