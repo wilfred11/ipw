@@ -98,9 +98,9 @@ This graph shows the distribution of propensity scores over the treated and untr
 
 ![weight_distri](https://github.com/user-attachments/assets/da9efc78-4061-4c11-994d-668527c69097)
 
-##### ROC
+##### Receiver-operating characteristic curve
 
-Briefly - too good of an AUC (and sharp vertical/horizontal lines) might suggest the groups are too separated and therefore violate the positivity violation. Too poor of an AUC might be a good sign that the groups are well-mixed and overlap. Again the validation graph shows worse results, the weighted graph should be as close as possible to the chance line.
+The ROC plots the true positive rate (sensitivity) against the false positive rate (1 - specificity) at various threshold settings. The weighted training ROC shows almost no discriminational power between exposed and control group (which is good). On the contrary, the validation graph shows worse results, the weighted graph should be as close as possible to the chance line.
 
 ![roc](https://github.com/user-attachments/assets/3158b23d-0ddc-4b6f-9e41-9dbf1c226de7)
 
