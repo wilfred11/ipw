@@ -81,6 +81,8 @@ The ATE is obtained as follows. The x-cols variable contains all the confounders
 
 `effect = ipw.estimate_effect(outcomes[1], outcomes[0])`
 
+The effect is 5.54, so taking the test preparation course increases the math score by 5.54 points. The maximum score to be obtained for the math test is 100.
+
 
 
 
