@@ -37,14 +37,14 @@ To get the scores themselves is done using the following line of code.
 
 [To understand why to use IPW](https://towardsdatascience.com/understanding-inverse-probability-of-treatment-weighting-iptw-in-causal-inference-4e69692bce7e/)
 
-The link above uses a minimal example to explain how, by weighting individual records, IPW balances a dataset. In the example at hand it doubles the number of results in the dataset. By doubling the results, the technique somehow falsifies results obtained from studies. In the example this falsification problem is handled. After applying the IPW technique, the sex of an individual no longer has influence on its chance to receive the treatment, while on beforehand a female had 75% chance to receive treatment. This gives way to the illustration in which the vertex between sex and treatment is removed.
+The link above uses a minimal example to explain how, by weighting individual records, IPW balances a dataset. In the example at hand it doubles the number of results in the dataset. By doubling the results, the technique somehow forges results obtained from studies. In the example this forgery problem is handled. After applying the IPW technique, the sex of an individual no longer has influence on its chance to receive the treatment, while on beforehand a female had 75% chance to receive treatment. This gives way to the illustration in which the vertex between sex and treatment is removed.
 
 <img src="https://github.com/user-attachments/assets/c6e72a9d-53d6-46e3-b56e-613b42e2df38" alt="drawing" width="200"/>
 <img src="https://github.com/user-attachments/assets/57ae1a48-ebf5-4cc2-9cbe-d2a66c46d1ad" alt="drawing" width="200"/>
 
 ### Case study
 
-To test the ideas of IPW ourself, I have used IPW on [a kaggle dataset](https://www.kaggle.com/datasets/rkiattisak/student-performance-in-mathematics). 
+To test the ideas of IPW ourself, I have applied IPW on [a kaggle dataset](https://www.kaggle.com/datasets/rkiattisak/student-performance-in-mathematics). 
 
 For every student the dataset contains social, gender, racial indicators, some test results and whether or not a test preparation course was followed.
 
@@ -66,7 +66,7 @@ Before getting actual results it is interesting to get an idea of the distributi
 From the image above it is to be seen there is a lot of overlap between the group that took the test preparation course and the group that did not. So every type of student that did take the course, has a counterpart that didn't take it. The image also makes clear that the majority of students didn't take the course.
 
 #### Results
-The ATE is obtained as follows. The x-cols variable contains all the confounders.
+The ATE is obtained as can be seen in the code snippet below. The x-cols variable contains all the confounders.
 
 `from causallib.estimation import IPW`
 
@@ -82,13 +82,13 @@ The ATE is obtained as follows. The x-cols variable contains all the confounders
 
 `effect = ipw.estimate_effect(outcomes[1], outcomes[0])`
 
-The effect is 5.54, so taking the test preparation course increases the math score by 5.54 points. The maximum score to be obtained for the math test is 100.
+The effect is 4.92, so taking the test preparation course increases the math score by 4.92 points. The maximum score to be obtained for the math test is 100, while on average  one would have a score of 66.03 when not having taken the prep course, while otherwise the score would be 70.95.
 
 #### Assessment
 
 ##### Standard mean differences
 
-The weighting has had its effects on the covariates for both the control group and the treated group (left), after weighting there is hardly any difference between them. As I am using crossvalidation, the validation fold gives a much more ambiguous look (right). The dataset only contains data for 1000 students, this could cause these results.
+The weighting has had its effects on the covariates for both the control group and the treated group (left), after weighting there is hardly any difference between them. As I am using crossvalidation, there is a validation fold. This validation fold gives a much more ambiguous impression (right). The dataset only contains data for 1000 students, this could cause these results.
 
 ![love](https://github.com/user-attachments/assets/786f5e23-2310-44af-8378-469f85dec081)
 
