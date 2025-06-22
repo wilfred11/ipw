@@ -69,7 +69,6 @@ def ipw(data):
     plt.legend(loc='upper right')
     plt.title('Propensity scores histogram')
     plt.legend()
-    #plt.show()
     plt.savefig("out/ipw/prop_histo")
     plt.clf()
 
@@ -119,7 +118,6 @@ def ipw(data):
     plt.savefig("out/ipw/pr")
     plt.clf()
 
-    #plt.show()
 
 def x_columns():
     return ['standard', 'group B', 'group C', 'group D', 'group E',
